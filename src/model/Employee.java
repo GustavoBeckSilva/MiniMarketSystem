@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package model;
 
-/**
- *
- * @author User
- */
-public class Employee {
+public class Employee extends Person{
+    
+    private float deveX;
+    
+    public void estocaProduto(){}
+    public void retiraProduto(){}
+    public void vende(){}
+    public void compra(){}
+    
     
 }
