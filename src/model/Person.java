@@ -3,11 +3,13 @@ package model;
 public abstract class Person {
 
     // Attributes
-    private String personName; // Nome da pessoa
-
+    private String personName; 
+    private String personCpf;
+    
     // Constructor
-    public Person(String personName) {
-        this.personName = personName; // Seta o nome da pessoa
+    public Person(String personName, String personCpf) {
+        this.personName = personName; 
+        this.personCpf = personCpf;
     }
 
     // Getters and setters
@@ -19,6 +21,15 @@ public abstract class Person {
         this.personName = personName;
     }
 
+    public String getPersonCpf() {
+        return personCpf;
+    }
+
+    public void setPersonCpf(String personCpf) {
+        this.personCpf = personCpf;
+    }
+    
+   
     // Abstract methods
     public abstract void showInformation();
 }

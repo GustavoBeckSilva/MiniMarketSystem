@@ -10,8 +10,19 @@ public class Product {
 
     // Constructor
     public Product(String productName, double productPrice) {
-        this.productName = productName;
-        this.productPrice = productPrice;
+
+        if(productPrice < 0.01){
+            JOptionPane.showMessageDialog(null,
+                productName + " não foi registrado(a): preço inválido.",
+                "Preço inválido",
+                JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else{
+            this.productName = productName;
+            this.productPrice = productPrice;
+        }
+        
     }
 
     // Getters and setters

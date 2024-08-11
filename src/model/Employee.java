@@ -11,8 +11,8 @@ public class Employee extends Person {
     private Date employeeAdmition;
 
     // Constructor
-    public Employee(String personName, String employeeTurn, Date employeeAdmition) {
-        super(personName);
+    public Employee(String personName, String personCpf, String employeeTurn, Date employeeAdmition) {
+        super(personName, personCpf);
         this.employeeTurn = employeeTurn;
         this.employeeAdmition = employeeAdmition;
     }
@@ -42,7 +42,7 @@ public class Employee extends Person {
         String formattedDate = dateFormater.format(this.getAdmition());
 
         JOptionPane.showMessageDialog(null, "Nome do caixa: " + this.getPersonName()
-                + "\nTurno: " + this.getTurn() + "\nData de admissão: " + formattedDate,
+                + "\nTurno: " + this.getTurn() + "\nData de admissão: " + formattedDate + "\nCPF: " + this.getPersonCpf(),
                 "Informações do caixa", JOptionPane.INFORMATION_MESSAGE);
     }
 }
